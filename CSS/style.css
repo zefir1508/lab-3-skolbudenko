@@ -1,0 +1,150 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 3fr 0.3fr 1fr;
+    height: 500px;
+    width: 500px;
+    grid-template-areas:
+    "item-1 item-1 item-1 item-1"
+    "item-2 item-3 item-3 item-3"
+    "item-2 item-4 item-4 item-5"
+    "item-2 item-6 item-6 item-5"
+    "item-7 item-7 item-7 item-7"
+}
+
+.box-1, .box-7{
+    background-color: #d1dfff;
+    padding: 0px 10px;
+}
+
+.box-2, .box-5{
+    background-color: #ffedda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-3, .box-6{
+    background-color: #bde474;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-4
+{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.box-5{
+    flex-direction: column;
+}
+
+
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7
+{
+    border: 1px solid #000000;
+}
+
+.box-1{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    align-content: start;
+    justify-content: start;
+}
+
+.box-7{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: end;
+}
+
+.elem1{
+    display: flex;
+    height: 20px;
+    width: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+   justify-content: center;
+   margin: 0px 400px 0px 0px;
+}
+
+.elem2{
+    height: 20px;
+    width: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    margin: 0px 0px 0px 400px;
+}
+
+.task
+{
+    width: 100px;
+    height: 20px;
+    background-color: #bde474;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.fieldcontainer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.task:hover
+{
+    cursor: pointer;
+}
+
+
+#item-1{
+    grid-area: item-1;
+}
+
+#item-2{
+    grid-area: item-2;
+}
+
+#item-3{
+    grid-area: item-3;
+}
+
+#item-4{
+    grid-area: item-4;
+}
+
+#item-5{
+    grid-area: item-5;
+}
+
+#item-6{
+    grid-area: item-6;
+}
+
+#item-7{
+    grid-area: item-7;
+}
